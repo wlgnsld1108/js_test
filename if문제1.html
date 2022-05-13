@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+
+        /*
+        문제 1
+        유저가 입력하는 숫자가 0인지 음성인지 양성인지 판단하는 프로그램을 만드시오
+        */
+
+        const a = prompt("숫자를 입력하세요","0")
+        if(0 == a){
+           alert("0입니다")
+        } else if(1<=a){
+            alert("양성입니다")
+        } else if(-1>=a){
+            alert("음성입니다")
+        } else {
+            alert("취소했습니다")
+        }
+    </script>
+</body>
+</html>
