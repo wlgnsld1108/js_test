@@ -132,7 +132,15 @@
         */
 
         animals.pop()
+        animals.push("Dog","Mosquito","Mouse","Mule")
+        console.log(animals.includes("Human"))
+        console.log(animals.includes("Cat"))
+        animals[animals.indexOf("Red deer")] = "Deer"
+        animals.splice(animals.indexOf("Spider"),3)
+        animals.splice(animals.indexOf("Tiger"))
         console.log(animals)
+        let b = animals.slice(animals.indexOf("Baboon"),animals.indexOf("Bison")+1)
+        console.log(b)
     </script>
 </body>
 </html>
