@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+
+        /*
+        한 지원자가 우리회사에 지원을했다. 지원자가 사용가능한 스킬은 배열에 제공이 된다
+        let skills = ["HTML","CSS","Javascript","React"]
+        Javascript와 React 둘다 할줄 안다면 “합격!” Javascript와 React 둘중 하나만 할줄 안다면 “예비”, 두 스킬이 없다면 “탈락” 을 보여주는 프로그램을 짜시오
+
+        input : let skills = ["HTML","CSS","Javascript","React"]
+        output: 합격 
+
+        input:let skills = ["HTML","CSS","Javascript"] 
+        output: 예비 
+
+        input:let skills = ["HTML","CSS"] 
+        output: 탈락
+        */
+
+        let skills = ["HTML","CSS","Javascript","React"]
+
+        if(skills.includes("Javascript") && skills.includes("React")){
+            alert("합격")
+        }else if(skills.includes("Javascript") || skills.includes("React")){
+            alert("예비")
+        }else if(skills.slice(skills.includes("Javascript","React"))){
+            alert("탈락")
+        }
+    </script>
+</body>
+</html>
