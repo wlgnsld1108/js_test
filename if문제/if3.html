@@ -25,6 +25,7 @@
         output: 탈락
         */
 
+        /*
         let skills = ["HTML","CSS","Javascript","React"]
 
         if(skills.includes("Javascript") && skills.includes("React")){
@@ -34,6 +35,18 @@
         }else if(skills.slice(skills.includes("Javascript","React"))){
             alert("탈락")
         }
+        */
+
+        let skills = ["HTML","CSS","Javascript","React"]
+
+        if(skills.includes("Javascript") && skills.includes("React")){
+        console.log("합격!")
+        }else if(skills.includes("Javascript") || skills.includes("React")){
+        console.log("예비")
+        }else {
+        console.log("탈락!")
+        }
+
     </script>
 </body>
 </html>
