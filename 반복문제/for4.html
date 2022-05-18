@@ -12,9 +12,18 @@
 
         // 주어진 숫자가 소수이면 true 아니면 false를 출력하는 프로그램을 짜시오.
         
-        for(let i=1;i<=7;i++){
-            console.log(i)
+        let n =11
+        let isPrime = true
+
+        if (n ===1){// 1은 소수가 아님 
+            isPrime = false
         }
+        for(let i=2;i<n;i++){
+        if(n % i == 0){
+            isPrime =  false 
+        }
+        }
+        console.log(isPrime)
     </script>
 </body>
 </html>
